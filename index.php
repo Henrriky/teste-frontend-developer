@@ -30,6 +30,7 @@ if(isset($_GET['msg'])){
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!-- Style -->
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="https://www.ellosdesign.com.br/uploads/loja_logo/31/thumb-32-32/3d4c33111275f2d9431b231f1d2de932.png">
 </head>
 
 <body>
