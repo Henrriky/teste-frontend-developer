@@ -1,0 +1,285 @@
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: gray;
+}
+
+body header {
+  background-color: #9AADBD;
+  width: 100%;
+  padding-block: 32px;
+}
+body header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+body header nav a:nth-child(1) {
+  font-size: 36px;
+  color: #FFF;
+  font-weight: 600;
+}
+body header nav a:nth-child(2) {
+  font-size: 24px;
+  color: #5D7184;
+  font-weight: 700;
+  background: #FFF;
+  padding: 10px 30px;
+  border-radius: 4px;
+}
+body main {
+  width: 100%;
+  background-color: white;
+}
+body main .mainContent {
+  padding-top: 32px;
+  padding-bottom: 70px;
+  width: 100%;
+  background-color: #9AADBD;
+}
+body main .mainContent .colorBackground {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+}
+body main .mainContent .colorBackground .contentText {
+  flex-basis: 55%;
+}
+body main .mainContent .colorBackground .contentText h1 {
+  color: white;
+  font-size: 44px;
+}
+body main .mainContent .colorBackground .contentText h2 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+body main .mainContent .colorBackground form {
+  padding: 16px 24px 54px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background-color: white;
+  border-radius: 6px;
+  flex-basis: 35%;
+}
+body main .mainContent .colorBackground form h2 {
+  font-size: 28px;
+  text-align: center;
+  color: #5D7184;
+  margin-bottom: 2px;
+  font-weight: 700;
+}
+body main .mainContent .colorBackground form input, body main .mainContent .colorBackground form textarea {
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #5D7184;
+  padding: 8px 18px;
+  border: 1px solid #9AADBD;
+  outline: none;
+}
+body main .mainContent .colorBackground form input::placeholder, body main .mainContent .colorBackground form textarea::placeholder {
+  color: #5D7184;
+}
+body main .mainContent .colorBackground form textarea {
+  padding: 8px 18px 0px 18px;
+  resize: none;
+}
+body main .mainContent .colorBackground form button {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background-color: #5B6E81;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  width: 100%;
+  cursor: pointer;
+}
+body main .aboutUs {
+  padding-top: 70px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+body main .aboutUs .about {
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+}
+body main .aboutUs .about img {
+  flex-basis: 50%;
+  border-radius: 8px;
+}
+body main .aboutUs .about .descriptionAboutUs {
+  flex-basis: 50%;
+  color: #5D7184;
+}
+body main .aboutUs .about .descriptionAboutUs h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+body main .aboutUs .about .descriptionAboutUs p {
+  font-size: 18px;
+  font-weight: 400;
+}
+body main .aboutUs .service > h2 {
+  font-size: 40px;
+  text-align: center;
+  color: #5D7184;
+  margin-bottom: 100px;
+}
+body main .aboutUs .service ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 60px;
+  color: #5D7184;
+}
+body main .aboutUs .service ul li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+body main .aboutUs .service ul li i {
+  font-size: 36px;
+}
+body main .aboutUs .service ul li h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+body main .aboutUs .service a {
+  text-align: center;
+  display: block;
+  width: 317px;
+  padding: 12px 0px;
+  margin: 0 auto;
+  background-color: #5B6E81;
+  color: white;
+  font-weight: 600;
+  border: none;
+  font-size: 20px;
+  margin-top: 80px;
+  border-radius: 6px;
+}
+body main .commonQuestions {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+body main .commonQuestions > h2 {
+  font-size: 40px;
+  text-align: center;
+  color: #5D7184;
+  margin-bottom: 50px;
+}
+body main .commonQuestions button {
+  font-size: 18px;
+  font-weight: 400;
+  color: #5D7184;
+  background-color: white;
+  border: 3px solid #5D7184;
+  border-radius: 6px;
+  padding: 12px;
+  width: 70%;
+  margin-bottom: 10px;
+}
+body main .footerPreview {
+  background-color: #5B6E81;
+  padding: 150px 0px 150px 0px;
+}
+body main .footerPreview .finalCall {
+  max-width: 1100px;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  gap: 64px;
+  align-items: center;
+  justify-content: space-between;
+}
+body main .footerPreview .finalCall .finalCallText h2 {
+  font-size: 40px;
+  line-height: 45px;
+  margin-bottom: 20px;
+}
+body main .footerPreview .finalCall .finalCallText p {
+  font-size: 16px;
+}
+body main .footerPreview .finalCall .finalCallTextCard {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+  padding: 60px;
+  background-color: white;
+  border-radius: 6px;
+  gap: 16px;
+}
+body main .footerPreview .finalCall .finalCallTextCard h2 {
+  font-size: 15px;
+  text-align: center;
+  color: #5D7184;
+  font-weight: 400;
+}
+body main .footerPreview .finalCall .finalCallTextCard a {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background-color: #5B6E81;
+  text-align: center;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  width: 70%;
+  margin: 0 auto;
+}
+body main .footerPreview .finalCall .finalCallTextCard small {
+  color: #5D7184;
+  text-align: center;
+}
+body footer {
+  background-color: #44596A;
+  padding-block: 60px;
+  color: white;
+  text-align: center;
+}
+body footer h3, body footer p {
+  font-weight: 500;
+}
+body footer h3 {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */
