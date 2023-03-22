@@ -13,7 +13,9 @@
 - Git e Github
 - MySQL
 
-## 🎮 Deploy Heroku
+## 🎮 Deploy
+
+- [Clique aqui para acessar o site)(https://teste-fullstack-ellos-design.000webhostapp.com/teste-fullstack/)
 
 ## 🎨 Design
 
