@@ -15,6 +15,7 @@
 
 ## 🎮 Deploy
 
+- ⚠ ATENÇÃO ⚠ Utilize de preferência o navegador Firefox para ver o site, pois eventualmente o Google Chrome exibe Layouts não desejados.
 - [Clique aqui para acessar o site](https://teste-fullstack-ellos-design.000webhostapp.com/teste-fullstack/)
 
 ## 🎨 Design
