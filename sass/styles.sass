@@ -1,0 +1,249 @@
+@use 'variables'
+@use 'mixins'
+
+// h2
+//     color: variables.$secondary-color
+// sass --watch sass/styles.sass:css/styles.css
+
+* 
+    font-family: 'Poppins', sans-serif
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    text-decoration: none
+    list-style: none
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+html 
+     scroll-behavior: smooth
+
+body::-webkit-scrollbar 
+    width: 6px
+    background-color: #F5F5F5
+body::-webkit-scrollbar-thumb 
+    background-color: gray
+body::-webkit-scrollbar-thumb:hover 
+    background-color: gray
+
+body     
+    header 
+        background-color: variables.$light-blue
+        width: 100%
+        padding-block: 32px 
+
+        nav
+            display: flex
+            align-items: center
+            justify-content: space-between
+            @include mixins.container
+
+            a:nth-child(1) 
+                font-size: 36px
+                color: #FFF
+                font-weight: 600
+            a:nth-child(2)
+                font-size: 24px
+                color: variables.$text-color
+                font-weight: 700
+                background: #FFF
+                padding: 10px 30px
+                border-radius: 4px
+
+    main
+        width: 100%
+        background-color: white
+
+        .mainContent
+            padding-top: 32px
+            padding-bottom: 70px
+            width: 100%
+            background-color: variables.$light-blue
+            .colorBackground 
+                @include mixins.container
+                display: flex
+                justify-content: space-between
+                align-items: center
+                gap: 28px
+                .contentText
+                    flex-basis: 55%
+                    h1 
+                        color: white
+                        font-size: 44px
+    
+                    h2
+                        color: white
+                        font-size: 18px
+                        font-weight: 600
+                form
+                    padding: 16px 24px 54px 24px
+                    display: flex
+                    flex-direction: column
+                    gap: 6px
+                    background-color: white
+                    border-radius: 6px
+                    flex-basis: 35%
+                    h2
+                        font-size: 28px
+                        text-align: center
+                        color: variables.$text-color
+                        margin-bottom: 2px
+                        font-weight: 700
+                    input, textarea
+                        border-radius: 6px
+                        font-size: 18px
+                        font-weight: 600
+                        color: variables.$text-color
+                        padding: 8px 18px
+                        border: 1px solid variables.$light-blue
+                        outline: none
+                        &::placeholder
+                            color: variables.$text-color
+                    textarea
+                        padding: 8px 18px 0px 18px
+                        resize: none
+                    button
+                        font-size: 18px
+                        font-weight: 600
+                        color: white
+                        background-color: variables.$button-color
+                        border: none
+                        border-radius: 6px
+                        padding: 12px 
+                        width: 100%
+                        cursor: pointer
+        .aboutUs 
+            padding-top: 70px
+            @include mixins.container
+            .about 
+                padding-bottom: 120px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                gap: 50px
+                width: 100%
+                img
+                    flex-basis: 50%
+                    border-radius: 8px
+                .descriptionAboutUs
+                    flex-basis: 50%
+                    color: variables.$text-color
+                    h2
+                        font-size: 40px
+                        margin-bottom: 10px
+                    p
+                        font-size: 18px
+                        font-weight: 400
+            .service
+                > h2
+                    font-size: 40px
+                    text-align: center
+                    color: variables.$text-color
+                    margin-bottom: 100px
+                ul
+                    display: grid
+                    grid-template-columns: repeat(2, 1fr)
+                    gap: 40px 60px
+                    color: variables.$text-color
+                    li
+                        display: flex
+                        align-items: center
+                        gap: 20px
+                        i
+                            font-size: 36px
+                        h2
+                            font-size: 20px
+                            margin-bottom: 5px
+                a
+                    text-align: center
+                    display: block
+                    width: 317px
+                    padding: 12px 0px
+                    margin: 0 auto
+                    background-color: variables.$button-color
+                    color: white
+                    font-weight: 600
+                    border: none
+                    font-size: 20px
+                    margin-top: 80px
+                    border-radius: 6px
+        .commonQuestions
+            padding-top: 100px
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding-bottom: 100px
+            @include mixins.container
+            > h2
+                font-size: 40px
+                text-align: center
+                color: variables.$text-color
+                margin-bottom: 50px
+            button 
+                font-size: 18px
+                font-weight: 400
+                color: variables.$text-color
+                background-color: white
+                border: 3px solid variables.$text-color
+                border-radius: 6px
+                padding: 12px 
+                width: 70%
+                margin-bottom: 10px
+        .footerPreview
+            background-color: variables.$medium-blue
+            padding: 150px 0px 150px 0px
+            .finalCall
+                @include mixins.container
+                color: white
+                display: flex
+                gap: 64px
+                align-items: center
+                justify-content: space-between
+                .finalCallText
+                    h2 
+                        font-size: 40px
+                        line-height: 45px
+                        margin-bottom: 20px
+                    p
+                        font-size: 16px
+                .finalCallTextCard
+                    display: flex
+                    flex-direction: column
+                    flex-basis: 70%
+                    padding: 60px
+                    background-color: white
+                    border-radius: 6px
+                    gap: 16px
+                    h2
+                        font-size: 15px
+                        text-align: center
+                        color: variables.$text-color
+                        font-weight: 400
+                    a
+                        font-size: 18px
+                        font-weight: 600
+                        color: white
+                        background-color: variables.$button-color
+                        text-align: center
+                        border: none
+                        border-radius: 6px
+                        padding: 12px 
+                        width: 70%
+                        margin: 0 auto
+                    small
+                        color: variables.$text-color
+                        text-align: center
+    footer
+        background-color: variables.$dark-blue
+        padding-block: 60px
+        color: white
+        text-align: center
+        h3, p
+            font-weight: 500
+        h3
+            margin-bottom: 20px
+
+
+
+                    
+
+            
