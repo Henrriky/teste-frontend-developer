@@ -127,7 +127,7 @@ if(isset($_GET['msg'])){
             <div class="finalCall animateCardShortBottom">
                 <div class="finalCallText">
                     <h2>Faça uma chamada final</h2>
-                    <p>Essa é uma chamada para ação final. Chegou até aqui e ainda não cadastrou? Aprovite...</p>
+                    <p>Essa é uma chamada para ação final. Chegou até aqui e ainda não cadastrou? Aproveite...</p>
                 </div>
                 <div class="finalCallTextCard">
                     <h2>Descrição chamando para uma última ação. Converse com nossa equipe sem compromisso. Não perca a chance de...</h2>

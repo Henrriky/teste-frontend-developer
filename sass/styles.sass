@@ -15,7 +15,7 @@
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
 html 
-     scroll-behavior: smooth
+     scroll-behavior: smooth    
 
 body::-webkit-scrollbar 
     width: 6px
@@ -36,17 +36,23 @@ body
             align-items: center
             justify-content: space-between
             @include mixins.container
+            @include mixins.mobile
+                padding-inline: 10px
+            @include mixins.mediumDevice
+                padding-inline: 40px
 
             a:nth-child(1) 
                 font-size: 36px
                 color: #FFF
                 font-weight: 600
+                @include mixins.mobile 
+                    font-size: 26px
             a:nth-child(2)
-                font-size: 24px
+                font-size: 14px
                 color: variables.$text-color
                 font-weight: 700
                 background: #FFF
-                padding: 10px 30px
+                padding: 10px 20px
                 border-radius: 4px
 
     main
@@ -64,16 +70,28 @@ body
                 justify-content: space-between
                 align-items: center
                 gap: 28px
+                @include mixins.mediumDevice
+                    padding-inline: 40px
+
+                @include mixins.mobile
+                    flex-direction: column
+                    justify-content: start
+                    align-items: center
+                    padding-inline: 10px
                 .contentText
                     flex-basis: 55%
                     h1 
                         color: white
                         font-size: 44px
+                        @include mixins.mobile
+                            font-size: 34px
     
                     h2
                         color: white
                         font-size: 18px
                         font-weight: 600
+                        @include mixins.mobile
+                            font-size: 14px
                 form
                     padding: 16px 24px 54px 24px
                     display: flex
@@ -82,12 +100,16 @@ body
                     background-color: white
                     border-radius: 6px
                     flex-basis: 35%
+
                     h2
                         font-size: 28px
                         text-align: center
                         color: variables.$text-color
                         margin-bottom: 2px
                         font-weight: 700
+                        @include mixins.mobile
+                            font-size: 22px
+
                     input, textarea
                         border-radius: 6px
                         font-size: 18px
@@ -96,6 +118,8 @@ body
                         padding: 8px 18px
                         border: 1px solid variables.$light-blue
                         outline: none
+                        @include mixins.mobile
+                            font-size: 16px
                         &::placeholder
                             color: variables.$text-color
                     textarea
@@ -114,6 +138,11 @@ body
         .aboutUs 
             padding-top: 70px
             @include mixins.container
+            @include mixins.mediumDevice
+                padding-inline: 40px
+
+            @include mixins.mobile
+                padding-inline: 20px
             .about 
                 padding-bottom: 120px
                 display: flex
@@ -121,6 +150,10 @@ body
                 align-items: center
                 gap: 50px
                 width: 100%
+                @include mixins.mobile
+                    flex-direction: column
+                    gap: 25px
+                    align-items: flex-start
                 img
                     flex-basis: 50%
                     border-radius: 8px
@@ -130,18 +163,24 @@ body
                     h2
                         font-size: 40px
                         margin-bottom: 10px
+                        @include mixins.mobile
+                            font-size: 32px
                     p
                         font-size: 18px
                         font-weight: 400
+                        @include mixins.mobile
+                            font-size: 16px
             .service
                 > h2
                     font-size: 40px
                     text-align: center
                     color: variables.$text-color
                     margin-bottom: 100px
+                    @include mixins.mobile
+                        font-size: 32px
                 ul
                     display: grid
-                    grid-template-columns: repeat(2, 1fr)
+                    grid-template-columns: repeat(1, 1fr)
                     gap: 40px 60px
                     color: variables.$text-color
                     li
@@ -173,11 +212,15 @@ body
             align-items: center
             padding-bottom: 100px
             @include mixins.container
+            @include mixins.mediumDevice
+                padding-inline: 40px
             > h2
                 font-size: 40px
                 text-align: center
                 color: variables.$text-color
                 margin-bottom: 50px
+                @include mixins.mobile
+                    font-size: 32px
             button 
                 font-size: 18px
                 font-weight: 400
@@ -188,21 +231,31 @@ body
                 padding: 12px 
                 width: 70%
                 margin-bottom: 10px
+                @include mixins.mobile
+                    font-size: 16px
+                    width: 80%
         .footerPreview
             background-color: variables.$medium-blue
             padding: 150px 0px 150px 0px
             .finalCall
                 @include mixins.container
+                @include mixins.mediumDevice
+                    padding-inline: 40px
                 color: white
                 display: flex
                 gap: 64px
                 align-items: center
                 justify-content: space-between
+                @include mixins.mobile
+                    flex-direction: column
+                    padding-inline: 20px
                 .finalCallText
                     h2 
                         font-size: 40px
                         line-height: 45px
                         margin-bottom: 20px
+                        @include mixins.mobile
+                            font-size: 32px
                     p
                         font-size: 16px
                 .finalCallTextCard
@@ -227,8 +280,12 @@ body
                         border: none
                         border-radius: 6px
                         padding: 12px 
-                        width: 70%
+                        width: 80%
                         margin: 0 auto
+                        @include mixins.mobile
+                            font-size: 16px
+                        @include mixins.mediumDevice
+                            font-size: 14px
                     small
                         color: variables.$text-color
                         text-align: center
@@ -239,8 +296,14 @@ body
         text-align: center
         h3, p
             font-weight: 500
+            @include mixins.mobile
+                font-size: 14px
         h3
             margin-bottom: 20px
+        p
+            @include mixins.mobile
+                font-size: 12px
+
 
 
 
